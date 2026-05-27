@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="张逸凡 · 品牌营销 × 内容运营 × 终端陈列 × AI工具 · 南京林业大学硕士" />
+  <meta property="og:title"       content="张逸凡 Zhang Yifan · Portfolio" />
+  <meta property="og:description" content="品牌 · 内容 · 落地 · 南京林业大学室内设计硕士" />
+  <meta property="og:image"       content="assets/images/og-cover.jpg" />
+  <title>张逸凡 · Zhang Yifan</title>
+  <link rel="icon" href="assets/icons/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Noto+Serif+SC:wght@300;400;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ══════════════════════════════════════
+     CURSOR
+══════════════════════════════════════ -->
+<div id="cursor"      aria-hidden="true"></div>
+<div id="cursor-ring" aria-hidden="true"></div>
+
+<!-- ══════════════════════════════════════
+     LOADER
+══════════════════════════════════════ -->
+<div id="loader" role="status" aria-label="页面加载中">
+  <div class="loader-name">
+    <span>张逸凡</span>&thinsp;<span>ZHANG YIFAN</span>
+  </div>
+  <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
+  <div class="loader-sub">PORTFOLIO · 2026</div>
+</div>
+
+<!-- ══════════════════════════════════════
+     NAVIGATION
+══════════════════════════════════════ -->
+<nav id="navbar" role="navigation" aria-label="主导航">
+  <a href="#hero" class="nav-logo">ZYF<span>·</span></a>
+  <button class="nav-toggle" id="navToggle"
+          aria-label="切换导航菜单" aria-expanded="false"
+          aria-controls="navLinks">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="navLinks" role="list">
+    <li><a href="#about">关于</a></li>
+    <li><a href="#stats">成绩</a></li>
+    <li><a href="#experience">经历</a></li>
+    <li><a href="#portfolio">作品</a></li>
+    <li><a href="#skills">能力</a></li>
+    <li><a href="#contact">联系</a></li>
+  </ul>
+</nav>
+
+<!-- ══════════════════════════════════════
+     HERO
+══════════════════════════════════════ -->
+<section id="hero" aria-label="首屏介绍">
+  <div class="hero-sticky" id="heroSticky">
+
+    <!-- Floating project cards (populated by hero, images from data/projects.js) -->
+    <div class="cards-stage" id="cardsStage" aria-hidden="true">
+
+      <div class="card-wrap" data-depth="6"  data-rot="-8"
+           style="--rot:-8deg;  --cw:210px; left:5%;  top:45%;">
+        <article class="card">
+          <div class="card-img-wrap">
+            <img src="assets/images/card-zhiwu.jpg"
+                 data-fallback="https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=400&q=80"
+                 alt="知物零售店" loading="lazy" />
+          </div>
+          <div class="card-label">
+            <span class="card-tag">商业空间</span>
+            <span class="card-title">知物零售店</span>
+          </div>
+        </article>
+      </div>
+
+      <div class="card-wrap" data-depth="9"  data-rot="12"
+           style="--rot:12deg;  --cw:185px; left:15%; top:18%;">
+        <article class="card">
+          <div class="card-img-wrap">
+            <img src="assets/images/card-lyt.jpg"
+                 data-fallback="https://images.unsplash.com/photo-1542621334-a254cf47733d?w=400&q=80"
+                 alt="林语堂文创店" loading="lazy" />
+          </div>
+          <div class="card-label">
+            <span class="card-tag">文创空间</span>
+            <span class="card-title">林语堂文创店</span>
+          </div>
+        </article>
+      </div>
+
+      <div class="card-wrap" data-depth="5"  data-rot="-4"
+           style="--rot:-4deg;  --cw:235px; left:68%; top:18%;">
+        <article class="card">
+          <div class="card-img-wrap">
+            <img src="assets/images/card-bosch.jpg"
+                 data-fallback="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&q=80"
+                 alt="博世展厅" loading="lazy" />
+          </div>
+          <div class="card-label">
+            <span class="card-tag">终端陈列</span>
+            <span class="card-title">博世 Showroom</span>
+          </div>
+        </article>
+      </div>
+
+      <div class="card-wrap" data-depth="8"  data-rot="18"
+           style="--rot:18deg;  --cw:175px; left:79%; top:54%;">
+        <article class="card">
+          <div class="card-img-wrap">
+            <img src="assets/images/yinfa.jpg"
+                 data-fallback="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=400&q=80"
+                 alt="银发小院民宿" loading="lazy" />
+          </div>
+          <div class="card-label">
+            <span class="card-tag">民宿设计</span>
+            <span class="card-title">银发小院</span>
+          </div>
+        </article>
+      </div>
+
+      <div class="card-wrap" data-depth="11" data-rot="-14"
+           style="--rot:-14deg; --cw:168px; left:74%; top:10%;">
+        <article class="card">
+          <div class="card-img-wrap">
+            <img src="assets/images/card-aigc.jpg"
+                 data-fallback="https://images.unsplash.com/photo-1633177317976-3f9bc45e1d1d?w=400&q=80"
+                 alt="AIGC东方幻梦" loading="lazy" />
+          </div>
+          <div class="card-label">
+            <span class="card-tag">AIGC</span>
+            <span class="card-title">东方幻梦</span>
+          </div>
+        </article>
+      </div>
+
+      <div class="card-wrap" data-depth="7"  data-rot="6"
+           style="--rot:6deg;   --cw:195px; left:4%;  top:14%;">
+        <article class="card">
+          <div class="card-img-wrap">
+            <img src="assets/images/card-station.jpg"
+                 data-fallback="https://images.unsplash.com/photo-1534430480872-3498386e7856?w=400&q=80"
+                 alt="地铁站设计" loading="lazy" />
+          </div>
+          <div class="card-label">
+            <span class="card-tag">公共空间</span>
+            <span class="card-title">地铁站设计</span>
+          </div>
+        </article>
+      </div>
+
+    </div><!-- /cards-stage -->
+
+    <!-- Hero text -->
+    <div class="hero-text" id="heroText">
+      <span class="hero-eyebrow">品牌 · 内容 · 落地</span>
+      <h1 class="hero-name">ZHANG<br /><em>YIFAN</em></h1>
+      <p class="hero-sub">南京林业大学 · 室内设计硕士</p>
+      <a href="#about" class="hero-cta">了解更多 <span class="arrow" aria-hidden="true">↓</span></a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     ABOUT
+══════════════════════════════════════ -->
+<section id="about" aria-labelledby="about-title">
+  <span class="section-label reveal">/ 关于我</span>
+  <h2 class="section-title reveal" id="about-title">我不只做<br />视觉表达</h2>
+
+  <div class="about-grid">
+    <div class="about-left reveal">
+      <p class="about-bio">
+        我是<strong>张逸凡</strong>，设计背景出身，兼具<strong>终端陈列</strong>、
+        <strong>内容传播</strong>与<strong>项目落地</strong>能力。
+      </p>
+      <p class="about-bio">
+        在西门子家电，我参与终端展陈升级与物料标准化管理；
+        在江苏共青团，我负责社群运营与活动统筹，推动 72 场课程覆盖逾千名青年。
+      </p>
+      <p class="about-bio">
+        我的工作方式是：把<strong>想法转成结果</strong>，再把结果讲清楚。
+      </p>
+      <div class="tags-wrap">
+        <span class="tag">策划统筹</span>
+        <span class="tag">终端陈列</span>
+        <span class="tag">新媒体运营</span>
+        <span class="tag">社群运营</span>
+        <span class="tag">AI 工具</span>
+        <span class="tag">数据复盘</span>
+        <span class="tag">空间设计</span>
+        <span class="tag">视觉物料</span>
+      </div>
+    </div>
+
+    <div class="about-right reveal">
+      <div class="edu-block">
+        <div class="edu-year">2023 — 2026</div>
+        <div class="edu-title">南京林业大学 · 硕士研究生（保研）</div>
+        <div class="edu-sub">室内设计 · 综测绩点排名 1 / 20</div>
+      </div>
+      <div class="edu-block">
+        <div class="edu-year">2019 — 2023</div>
+        <div class="edu-title">南京林业大学 · 本科</div>
+        <div class="edu-sub">环境设计 · 连续四年三好学生 · 2023 优秀毕业生</div>
+      </div>
+      <div class="edu-block">
+        <div class="edu-year">证书 &amp; 学术</div>
+        <div class="edu-title">CET-6 · 计算机二级 · 实用新型专利</div>
+        <div class="edu-sub">核心论文《江南古典园林意境在室内空间中的运用》</div>
+      </div>
+      <div class="edu-block">
+        <div class="edu-year">政治面貌</div>
+        <div class="edu-title">中共党员</div>
+        <div class="edu-sub">研究生会学术部部长 · 2024.09 — 2025.06</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     STATS
+══════════════════════════════════════ -->
+<section id="stats" aria-labelledby="stats-title">
+  <span class="section-label reveal">/ 量化成绩</span>
+  <h2 class="section-title reveal" id="stats-title">数字背后<br />的执行力</h2>
+  <div class="stats-grid">
+    <div class="stat-box reveal">
+      <div class="stat-num" data-count="72">0<sup>+</sup></div>
+      <div class="stat-desc">主导落地课程班次<br />（宁青 Yeah 校品牌活动）</div>
+    </div>
+    <div class="stat-box reveal">
+      <div class="stat-num" data-count="1000">0<sup>+</sup></div>
+      <div class="stat-desc">社群运营累计覆盖人次<br />5 个垂直社群从 0 搭建</div>
+    </div>
+    <div class="stat-box reveal">
+      <div class="stat-num" data-count="18">0</div>
+      <div class="stat-desc">学院深度碰撞场次<br />学术嘉年华 IP 统筹策划</div>
+    </div>
+    <div class="stat-box reveal">
+      <div class="stat-num stat-fraction">1/20</div>
+      <div class="stat-desc">研究生综测绩点排名<br />连续四年一等奖学金</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     EXPERIENCE — 由 render.js 自动生成内容
+══════════════════════════════════════ -->
+<section id="experience" aria-labelledby="exp-title">
+  <span class="section-label reveal">/ 工作经历</span>
+  <h2 class="section-title reveal" id="exp-title">从策划<br />到落地</h2>
+  <p class="section-hint reveal">点击每段经历可展开详情</p>
+  <!-- render.js 填充此容器 -->
+  <div class="exp-list" role="list" aria-label="工作经历列表"></div>
+</section>
+
+<!-- ══════════════════════════════════════
+     PORTFOLIO — 由 render.js 自动生成内容
+══════════════════════════════════════ -->
+<section id="portfolio" aria-labelledby="portfolio-title">
+  <span class="section-label reveal">/ 设计作品</span>
+  <h2 class="section-title reveal" id="portfolio-title">空间叙事<br />与体验设计</h2>
+  <p class="section-hint reveal">点击作品卡片查看完整介绍</p>
+  <!-- render.js 填充此容器 -->
+  <div class="portfolio-grid" role="list" aria-label="作品列表"></div>
+</section>
+
+<!-- ══════════════════════════════════════
+     AWARDS MARQUEE
+══════════════════════════════════════ -->
+<section id="awards" aria-labelledby="awards-title">
+  <span class="section-label reveal">/ 获奖及科研</span>
+  <h2 class="section-title reveal" id="awards-title">荣誉<br />与成果</h2>
+  <div class="awards-marquee" aria-label="获奖列表">
+    <div class="awards-track" aria-hidden="true">
+      <span class="award-item"><span class="award-dot"></span>中国好创意 国家级奖项</span>
+      <span class="award-item"><span class="award-dot"></span>江苏省室内设计大赛 金奖</span>
+      <span class="award-item"><span class="award-dot"></span>江苏艺术大赛 金奖</span>
+      <span class="award-item"><span class="award-dot"></span>米兰设计周 国家级奖项</span>
+      <span class="award-item"><span class="award-dot"></span>蓝桥杯 二等奖</span>
+      <span class="award-item"><span class="award-dot"></span>实用新型专利《智能坐立式淋浴器》</span>
+      <span class="award-item"><span class="award-dot"></span>核心论文《江南古典园林意境在室内空间中的运用》</span>
+      <span class="award-item"><span class="award-dot"></span>2023 年优秀毕业生</span>
+      <span class="award-item"><span class="award-dot"></span>连续四年三好学生</span>
+      <span class="award-item"><span class="award-dot"></span>水杉学子奖学金</span>
+      <span class="award-item"><span class="award-dot"></span>中国好创意 国家级奖项</span>
+      <span class="award-item"><span class="award-dot"></span>江苏省室内设计大赛 金奖</span>
+      <span class="award-item"><span class="award-dot"></span>江苏艺术大赛 金奖</span>
+      <span class="award-item"><span class="award-dot"></span>米兰设计周 国家级奖项</span>
+      <span class="award-item"><span class="award-dot"></span>蓝桥杯 二等奖</span>
+      <span class="award-item"><span class="award-dot"></span>实用新型专利《智能坐立式淋浴器》</span>
+      <span class="award-item"><span class="award-dot"></span>核心论文《江南古典园林意境在室内空间中的运用》</span>
+      <span class="award-item"><span class="award-dot"></span>2023 年优秀毕业生</span>
+      <span class="award-item"><span class="award-dot"></span>连续四年三好学生</span>
+      <span class="award-item"><span class="award-dot"></span>水杉学子奖学金</span>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     SKILLS
+══════════════════════════════════════ -->
+<section id="skills" aria-labelledby="skills-title">
+  <span class="section-label reveal">/ 核心能力</span>
+  <h2 class="section-title reveal" id="skills-title">把设计理解<br />用在业务里</h2>
+ <div class="skills-grid">
+
+  <div class="skill-card reveal">
+    <div class="skill-icon" aria-hidden="true">🏗️</div>
+    <h3 class="skill-name">空间建模与渲染</h3>
+    <p class="skill-desc">能根据 SI 及历史案例要求完成店面空间方案延申设计，输出空间模型与高质量渲染图，支持方案汇报与客户沟通。</p>
+    <div class="skill-tools">
+      <span class="skill-tool">SketchUp</span>
+      <span class="skill-tool">D5 Render</span>
+      <span class="skill-tool">Enscape</span>
+      <span class="skill-tool">Photoshop</span>
+    </div>
+  </div>
+
+  <div class="skill-card reveal">
+    <div class="skill-icon" aria-hidden="true">📐</div>
+    <h3 class="skill-name">施工图绘制</h3>
+    <p class="skill-desc">熟练使用 CAD 完成施工图，具备材料特性、结构特点与施工节点的基础认知，能准确对接施工方需求。</p>
+    <div class="skill-tools">
+      <span class="skill-tool">AutoCAD</span>
+      <span class="skill-tool">施工节点</span>
+      <span class="skill-tool">材料工艺</span>
+      <span class="skill-tool">图纸归档</span>
+    </div>
+  </div>
+
+  <div class="skill-card reveal">
+    <div class="skill-icon" aria-hidden="true">🔍</div>
+    <h3 class="skill-name">施工落地跟进</h3>
+    <p class="skill-desc">具备终端落地执行经验，能在各施工阶段对成果进行验收，发现并推动现场问题闭环，确保设计意图准确还原。</p>
+    <div class="skill-tools">
+      <span class="skill-tool">现场验收</span>
+      <span class="skill-tool">供应商对接</span>
+      <span class="skill-tool">问题闭环</span>
+      <span class="skill-tool">进度跟进</span>
+    </div>
+  </div>
+
+  <div class="skill-card reveal">
+    <div class="skill-icon" aria-hidden="true">🗂️</div>
+    <h3 class="skill-name">品牌终端陈列</h3>
+    <p class="skill-desc">在博世&西门子家电实习期间负责双品牌展陈物料管理与 PoSM 制作，对色彩材质搭配有敏锐度，能结合品牌 VI 进行差异化陈列布局。</p>
+    <div class="skill-tools">
+      <span class="skill-tool">品牌 VI</span>
+      <span class="skill-tool">PoSM 制作</span>
+      <span class="skill-tool">陈列布局</span>
+      <span class="skill-tool">TOM 系统</span>
+    </div>
+  </div>
+
+  <div class="skill-card reveal">
+    <div class="skill-icon" aria-hidden="true">📣</div>
+    <h3 class="skill-name">内容传播与活动统筹</h3>
+    <p class="skill-desc">具备公众号内容策划、宣传物料设计与社群运营经验，曾统筹推进 72 场课程落地，能把复杂信息整理成清晰的传播表达。</p>
+    <div class="skill-tools">
+      <span class="skill-tool">内容策划</span>
+      <span class="skill-tool">活动统筹</span>
+      <span class="skill-tool">社群运营</span>
+      <span class="skill-tool">Illustrator</span>
+    </div>
+  </div>
+
+  <div class="skill-card reveal">
+    <div class="skill-icon" aria-hidden="true">🤖</div>
+    <h3 class="skill-name">AI 辅助设计出图</h3>
+    <p class="skill-desc">能使用 AI 工具快速生成空间概念场景与材质氛围参考图，缩短方案初期视觉表达周期，辅助设计方向确认与客户沟通。</p>
+    <div class="skill-tools">
+      <span class="skill-tool">Midjourney</span>
+      <span class="skill-tool">Stable Diffusion</span>
+      <span class="skill-tool">LORA 精调</span>
+      <span class="skill-tool">ChatGPT</span>
+    </div>
+  </div>
+
+</div>
+</section>
+
+<!-- ══════════════════════════════════════
+     CONTACT
+══════════════════════════════════════ -->
+<section id="contact" aria-labelledby="contact-title">
+  <span class="section-label reveal">/ 联系我</span>
+  <h2 class="section-title reveal" id="contact-title">期待<br />合作</h2>
+  <div class="contact-links reveal">
+    <a href="mailto:3141899062@qq.com" class="contact-link contact-link--solid">✉&nbsp; 3141899062@qq.com</a>
+    <a href="tel:18994056620"          class="contact-link contact-link--outline">📱&nbsp; 18994056620</a>
+  </div>
+  <p class="contact-sub reveal">微信同号 · WeChat ID: design_6868</p>
+</section>
+
+<!-- ══════════════════════════════════════
+     FOOTER
+══════════════════════════════════════ -->
+<footer role="contentinfo">
+  <span>© 2025 张逸凡 Zhang Yifan</span>
+  <span class="footer-sep" aria-hidden="true">·</span>
+  <span>南京林业大学 · 室内设计硕士</span>
+  <span class="footer-sep" aria-hidden="true">·</span>
+  <span>Built with ♥</span>
+</footer>
+
+<!-- ══════════════════════════════════════
+     MODAL — 作品详情弹窗
+     结构在这里，内容由 modal.js 填充
+══════════════════════════════════════ -->
+<div id="modal-overlay"
+     role="dialog"
+     aria-modal="true"
+     aria-label="作品详情"
+     aria-hidden="true">
+
+  <div class="modal-container">
+
+    <!-- 关闭按钮 -->
+    <button id="modal-close" class="modal-close" aria-label="关闭弹窗">✕</button>
+
+    <!-- 图片轮播 -->
+    <div class="modal-carousel" aria-label="项目图片轮播">
+      <div id="modal-carousel-track" class="carousel-track"></div>
+      <button id="modal-prev" class="carousel-btn carousel-btn--prev" aria-label="上一张">&#10094;</button>
+      <button id="modal-next" class="carousel-btn carousel-btn--next" aria-label="下一张">&#10095;</button>
+      <div id="modal-carousel-dots" class="carousel-dots" role="tablist" aria-label="图片索引"></div>
+      <div id="modal-caption" class="carousel-caption"></div>
+    </div>
+
+    <!-- 弹窗主体 -->
+    <div class="modal-body">
+
+      <!-- 头部信息 -->
+      <div class="modal-header">
+        <span id="modal-category" class="modal-category"></span>
+        <h2  id="modal-title"    class="modal-title"></h2>
+        <div id="modal-period"   class="modal-period"></div>
+        <div id="modal-tags"     class="modal-tags"></div>
+      </div>
+
+      <!-- Tab 导航 -->
+      <div class="modal-tabs" role="tablist" aria-label="项目内容分类">
+        <button class="modal-tab-btn is-active"
+                data-tab="overview"
+                role="tab" aria-selected="true"
+                aria-controls="modal-panel-overview">项目概述</button>
+        <button class="modal-tab-btn"
+                data-tab="process"
+                role="tab" aria-selected="false"
+                aria-controls="modal-panel-process">设计过程</button>
+        <button class="modal-tab-btn"
+                data-tab="result"
+                role="tab" aria-selected="false"
+                aria-controls="modal-panel-result">成果展示</button>
+      </div>
+
+      <!-- Tab 内容区 -->
+      <div class="modal-tab-panels">
+        <div id="modal-panel-overview"
+             class="modal-tab-panel is-active"
+             data-tab="overview"
+             role="tabpanel"
+             aria-labelledby="tab-overview"></div>
+        <div id="modal-panel-process"
+             class="modal-tab-panel"
+             data-tab="process"
+             role="tabpanel"
+             aria-labelledby="tab-process"
+             aria-hidden="true"></div>
+        <div id="modal-panel-result"
+             class="modal-tab-panel"
+             data-tab="result"
+             role="tabpanel"
+             aria-labelledby="tab-result"
+             aria-hidden="true"></div>
+      </div>
+
+    </div><!-- /modal-body -->
+  </div><!-- /modal-container -->
+</div><!-- /modal-overlay -->
+
+<!-- ══════════════════════════════════════
+     SCRIPTS — 顺序很重要：
+     data → 工具模块 → render → main
+══════════════════════════════════════ -->
+<script src="data/experience.js"></script>
+<script src="data/projects.js"></script>
+<script src="js/carousel.js"></script>
+<script src="js/modal.js"></script>
+<script src="js/accordion.js"></script>
+<script src="js/render.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
